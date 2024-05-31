@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./views/Home";
 import Login from "./views/Login";
 import Products from "./views/Products";
-import Contact from "./views/Contact";
+import NewProduct from "./views/ProductForm";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/productos" element={<Products />} />
-          <Route path="/Contacto" element={<Contact />} />
+          <Route path="/registrar_producto" element={<NewProduct />} />
         </Routes>
       </BrowserRouter>
     </div>

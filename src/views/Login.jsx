@@ -1,6 +1,10 @@
 import '../stylesheets/login.css'
 
+import Buttons from '../components/Buttons';
+
 const Login = () => {
+    const { HomeButton, ProductsButton } = Buttons
+
     return (
         <div className="container mt-5 pt-5">
             <div className="row">
@@ -17,6 +21,10 @@ const Login = () => {
                                 <div className="text-center">
                                     <button className="btn btn-primary">Login</button>
                                     <a href="/" className="nav-link mt-3">Volver</a>
+
+                                    {/* Botones de prueba */}
+                                    <HomeButton />
+                                    <ProductsButton />
                                 </div>
                             </form>
                         </div>
